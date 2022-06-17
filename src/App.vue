@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <AvadaHeader>
-    </AvadaHeader>
+    <AvadaHeader/>
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 mt-5">
             <img src="https://via.placeholder.com/150" alt="">
           </div>
-          <div class="col-4">
+          <div class="col-4 mt-4">
             <img src="https://via.placeholder.com/150" alt="">
           </div>
-          <div class="col-4">
+          <div class="col-4 mb-5">
             <img src="https://via.placeholder.com/150" alt="">
           </div>
 
@@ -19,8 +18,8 @@
       </div>
 
     </main>
-
-    <img alt="Vue logo" src="./assets/logo.png">
+    <FooterAvada/>
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
@@ -40,13 +39,17 @@
 
 <script>
 import AvadaHeader from './components/AvadaHeader.vue'
+import FooterAvada from './components/FooterAvada.vue'
+
+undefined
 undefined
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    AvadaHeader
+    AvadaHeader,
+    FooterAvada
 },
   data () {
     return {
@@ -58,12 +61,16 @@ export default {
 
 <style lang="scss">
 
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;300;500;700;900&display=swap');
+
 // PALETTE
 // color cube
 $shark: #252a2d;
 $chestNut: #d5635f;
 $doveGray: #6b6b6b;
 $edward: #aeafae;
+$white: #fafafa;
+
 $hockeyPokey: #d8bc29;
 // median cut
 $sharkM: #212425;
@@ -79,12 +86,10 @@ $woodSmoke: #070809;
 $antiqueBrass: #c2856c;
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  background-color: $chestNut;
-  margin-top: 60px;
+  // font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'M PLUS 2', sans-serif;
+  background-color: $shark;
+  color: white;
 }
 
 </style>
