@@ -1,11 +1,11 @@
 <template>
     <div class="bg">
-        <div class="nav-wrapper container-fluid">
-            <div class="row justify-content-between align-items-center align-content-center text-center">
-                <div class="col-2 m-4 ml-5">
+        <div class="nav-wrapper container-fluid p-3">
+            <div class="row justify-content-between align-items-center text-center">
+                <div class="col-2 p-2 ms-5">
                     <img class="logo" :src="require('../assets/img/gym_logo_2x.png')" alt="">
                 </div>
-                <nav class="col-5 nav flex-nowrap ">
+                <nav class="col-5 nav flex-nowrap me-5">
                     <ul class="list-inline" v-for="(voice, index) in avadaMenu" :key="index">
                         <li class="nav-item"><a class="nav-link" :id="`menu-item-${index}`" href="#">{{voice}}</a></li>
                     </ul>
@@ -69,7 +69,7 @@ $woodSmoke: #070809;
 $antiqueBrass: #c2856c;
 
 // div.nav-wrapper {
-//     width:95%;
+//     width:97%;
 //     margin: auto;
 // }
 

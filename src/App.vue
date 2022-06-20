@@ -3,7 +3,7 @@
     <AvadaHeader/>
     <main>
       <section class="bg-basegrey">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row text-center justify-content-center">
             <div class="col-7 m-5">
               <br>
@@ -22,32 +22,37 @@
       </section>
       <!-- here comes the triangle -->
       <section class="bg-mediumgrey">
-        <div class="container">
-          <div class="row justify-content-center p-5">
-            <div class="col-5">
-              <img :src="require('./assets/img/home_img-compressor.jpg')" alt="">
-            </div>
-            <div class="col-5">
-              <h6 class="thick small">
-                Sign Up For A Training Session!
-              </h6>
-              <label class="small txtgrey mt-3" for="input-name">Name:</label>
-              <input type="text" id="input-name">
-              <br>
-              <label class="small txtgrey mt-3" for="input-mail">Email:</label>
-              <input type="email" name="" id="input-mail">
-              <br>
-              <button class="btn-form mt-3 p-2">START NOW!</button>
-            </div>
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+              <div class="col-7">
+                <div class="row justify-content-center pt-5 pb-5 mt-5 mb-5">
+                  <div class="col-6">
+                    <img :src="require('./assets/img/home_img-compressor.jpg')" alt="">
+                  </div>
+                  <div class="col-6">
+                    <h6 class="thick small">
+                      Sign Up For A Training Session!
+                    </h6>
+                    <label class="small txtgrey mt-3" for="input-name">Name:</label>
+                    <input type="text" id="input-name">
+                    <br>
+                    <label class="small txtgrey mt-3" for="input-mail">Email:</label>
+                    <input type="email" name="" id="input-mail">
+                    <br>
+                    <button class="btn-form mt-3 p-2">START NOW!</button>
+                  </div>
+                </div>
+                
+              </div>
           </div>
         </div>
       </section>
       <!-- prima immagine sfondo -->
       <section class="bg-gym">
-        <div class="container">
-          <div class="row justify-content-center p-5">
-            <div class="col-10 container-fluid">
-              <div class="row text-center">
+        <div class="container-fluid">
+          <div class="row justify-content-center pt-5 pb-5">
+            <div class="col-7">
+              <div class="row text-center mt-5 mb-5">
                 <div class="col-3">
                   <img class="icon" :src="require('./assets/img/Strenght.svg')" alt="">
                   <h6 class="thick small mt-3">
@@ -87,9 +92,9 @@
       </section>
       <!-- Reviews -->
       <section class="bg-basegrey">
-        <div class="container">
+        <div class="container-fluid">
           <div class="row text-center justify-content-center">
-            <div class="col-10 m-5">
+            <div class="col-7 m-5">
               <br>
               <h4 class="thick">
                   REAL WORLD RESULTS
@@ -97,65 +102,71 @@
               <img class="m-3" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
               <br>
               <div class="row justify-content-center text-start mb-4 mt-3">
-                <div class="col-5 bg-mediumgrey p-3 me-3">
-                  <div class="row">
-                    <div class="col-4">
-                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
-                    </div>
-                    <div class="col-8">
-                      <p>
-                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                      </p>
-                      <span>
-                        - Tara Smith
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-5 bg-mediumgrey p-3 ms-3">
-                  <div class="row">
-                    <div class="col-4">
-                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
-                    </div>
-                    <div class="col-8">
-                      <p>
-                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                      </p>
-                      <span>
-                        - Tara Smith
-                      </span>
+                <div class="col-6 p-3">
+                  <div class="col-12 bg-mediumgrey p-3">
+                    <div class="row">
+                      <div class="col-4">
+                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                      </div>
+                      <div class="col-8 small">
+                        <i>
+                          "The trainers at Avada Gym have helied me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                        </i>
+                        <br>
+                        <span>- Tara Smith
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="row justify-content-center text-start mb-5">
-                <div class="col-5 bg-mediumgrey p-3 me-3">
-                  <div class="row">
-                    <div class="col-4">
-                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
-                    </div>
-                    <div class="col-8">
-                      <p>
-                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                      </p>
-                      <span>
-                        - Tara Smith
-                      </span>
+                <div class="col-6 p-3">
+                  <div class="col-12 bg-mediumgrey p-3">
+                    <div class="row">
+                      <div class="col-4">
+                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p>
+                          "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                        </p>
+                        <span>
+                          - Tara Smith
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-5 bg-mediumgrey p-3 ms-3">
-                  <div class="row">
-                    <div class="col-4">
-                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                <div class="col-6 p-3">
+                  <div class="col-12 bg-mediumgrey p-3">
+                    <div class="row">
+                      <div class="col-4">
+                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p>
+                          "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                        </p>
+                        <span>
+                          - Tara Smith
+                        </span>
+                      </div>
                     </div>
-                    <div class="col-8">
-                      <p>
-                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                      </p>
-                      <span>
-                        - Tara Smith
-                      </span>
+                  </div>
+                </div>
+                <div class="col-6 p-3">
+                  <div class="col-12 bg-mediumgrey p-3">
+                    <div class="row">
+                      <div class="col-4">
+                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                      </div>
+                      <div class="col-8">
+                        <p>
+                          "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                        </p>
+                        <span>
+                          - Tara Smith
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -195,14 +206,16 @@
       <!-- secondo break di sfondo -->
       <section class="bg-fists">
         <div class="container">
-          <div class="row justify-content-center text-center p-5">
-            <div class="col-7">
+          <div class="row justify-content-center text-center">
+            <div class="col-5 mt-4 mb-3">
                 <p class="large mt-5">
-                  <b>
+                  <b class="half-thick mt-4">
                     "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times"
                   </b>
                 </p>
-                <span class="thick mt-5">BRUCE LEE - QUOTE OF THE DAY</span>
+                <img class="m-3" :src="require('./assets/img/divider-white-xx.png')" alt="Divider">
+                <br>
+                <span class="thick my-3">BRUCE LEE - QUOTE OF THE DAY</span>
             </div>
            </div>
         </div>
@@ -296,7 +309,12 @@ img {
 }
 
 .thick {
-    font-weight: 700;
+  font-weight: 700;
+}
+
+.half-thick {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 
 input {
