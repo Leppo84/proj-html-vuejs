@@ -1,22 +1,27 @@
 <template>
-    <div class="container-fluid bg">
-        <div class="row justify-content-between align-items-center">
-            <div class="col-2">
-                <img class="logo mt-3" :src="require('../assets/img/gym_logo_2x.png')" alt="">
-
+    <div class="bg">
+        <div class="nav-wrapper container-fluid">
+            <div class="row justify-content-between align-items-center align-content-center text-center">
+                <div class="col-2 m-4 ml-5">
+                    <img class="logo" :src="require('../assets/img/gym_logo_2x.png')" alt="">
+                </div>
+                <nav class="col-5 nav flex-nowrap ">
+                    <ul class="list-inline" v-for="(voice, index) in avadaMenu" :key="index">
+                        <li class="nav-item"><a class="nav-link" :id="`menu-item-${index}`" href="#">{{voice}}</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="col-5 nav">
-                <ul class="nav" v-for="(voice, index) in avadaMenu" :key="index">
-                    <li class="nav-item"><a class="nav-link" href="#">{{voice}}</a></li>
-                </ul>
-            </nav>
         </div>
         <div class="container">
-        </div>
-        <div class="row text-center align-self-center">
-            <div class="col-12">
-                <h1 class="">NO PAIN NO GAIN</h1>
-
+            <div class="row splash text-center align-items-center">
+                <div class="col-12">
+                    <h1 class="thick">NO PAIN NO GAIN</h1>
+                    <span>
+                        Motivation is what gets you started. Habits is what keeps you going.
+                    </span>
+                    <br>
+                    <button> JOIN US TODAY</button>
+                </div>
             </div>
         </div>
     </div>
@@ -30,7 +35,7 @@ export default {
   },
   data () {
     return {
-        avadaMenu:["HOME", "ABOUT US", "FACILITIES", "MEMBERSHIP", "TESTIMONIALS"],
+        avadaMenu:["HOME", "ABOUT US", "FACILITIES", "MEMBERSHIP", "TESTIMONIALS", "BLOG"],
     }
 
   }  
@@ -63,27 +68,40 @@ $irishCoffee: #632927;
 $woodSmoke: #070809;
 $antiqueBrass: #c2856c;
 
+// div.nav-wrapper {
+//     width:95%;
+//     margin: auto;
+// }
+
 img {
-    max-width: 100%;
+    max-width: 80%;
 }
 .bg {
     height: 100vh;
-    background-position: top;
+    background-position: 0px -30px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('@/assets/img/home-banner.jpg');
 }
 
-h1 {
+h1.thick {
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 li.nav-item {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 
 }
 
 a.nav-link {
     color: #aeafae;
+}
+
+#menu-item-0 {
+    color: #d3615e;
+}
+
+.splash {
+    height: 60vh;
 }
 </style>

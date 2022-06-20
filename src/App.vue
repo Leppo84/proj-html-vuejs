@@ -61,7 +61,7 @@ export default {
 
 <style lang="scss">
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap');
 
 // PALETTE
 // color cube
@@ -87,7 +87,7 @@ $antiqueBrass: #c2856c;
 
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
-  font-family: 'M PLUS 2', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: $shark;
   color: white;
 }
