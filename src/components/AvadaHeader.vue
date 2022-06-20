@@ -84,17 +84,17 @@ img {
     background-image: url('@/assets/img/home-banner.jpg');
 }
 
-h1.thick {
-    font-weight: 700;
+h1 {
+    // font-weight: 700;
     font-size: 4rem;
 }
 li.nav-item {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
 
 }
 
 a.nav-link {
-    color: #aeafae;
+    color: #fafafa;
 }
 
 #menu-item-0 {

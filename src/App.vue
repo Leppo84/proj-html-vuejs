@@ -2,20 +2,46 @@
   <div id="app">
     <AvadaHeader/>
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-4 mt-5">
-            <img src="https://via.placeholder.com/150" alt="">
+      <section class="bg-basegrey">
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div class="col-7 m-5">
+              <br>
+              <h4 class="thick">
+                  WORLD CLASS Fitness
+              </h4>
+              <img class="m-4" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
+              <br>
+              <p>
+                At Avada gym, everithng we do from top to bottom is of the highest quality to ensure we're equipped to help you reach your goals of a healthy and fit life style.
+              </p>
+              <br>
+            </div>
           </div>
-          <div class="col-4 mt-4">
-            <img src="https://via.placeholder.com/150" alt="">
-          </div>
-          <div class="col-4 mb-5">
-            <img src="https://via.placeholder.com/150" alt="">
-          </div>
-
         </div>
-      </div>
+      </section>
+      <!-- here comes the triangle -->
+      <section class="bg-mediumgrey">
+        <div class="container">
+          <div class="row justify-content-center p-5">
+            <div class="col-5">
+              <img :src="require('./assets/img/home_img-compressor.jpg')" alt="">
+            </div>
+            <div class="col-5">
+              <h6 class="thick small">
+                Sign Up For A Training Session!
+              </h6>
+              <label class="small txtgrey mt-3" for="input-name">Name:</label>
+              <input type="text" id="input-name">
+              <br>
+              <label class="small txtgrey mt-3" for="input-mail">Email:</label>
+              <input type="email" name="" id="input-mail">
+              <br>
+              <button class="btn-form mt-3 p-2">START NOW!</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </main>
     <FooterAvada/>
@@ -61,7 +87,7 @@ export default {
 
 <style lang="scss">
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200&display=swap');
 
 // PALETTE
 // color cube
@@ -88,8 +114,46 @@ $antiqueBrass: #c2856c;
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
   background-color: $shark;
   color: white;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-basegrey {
+  background-color: #25292b;
+}
+
+.bg-mediumgrey {
+  background-color: #1f2123;
+}
+
+.thick {
+    font-weight: 700;
+}
+
+input {
+  width: 100%;
+  background-color: #202325;
+  border: 1px solid #2a2e30;
+}
+
+.small {
+  font-size: small;
+}
+
+.txtgrey {
+  color: #969596;
+}
+
+.btn-form {
+  background-color: #ee6059;
+  color: #fafafa;
+  width: 100%;
+  text-align: center;
 }
 
 </style>
