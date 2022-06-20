@@ -10,7 +10,7 @@
               <h4 class="thick">
                   WORLD CLASS Fitness
               </h4>
-              <img class="m-4" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
+              <img class="m-2" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
               <br>
               <p>
                 At Avada gym, everithng we do from top to bottom is of the highest quality to ensure we're equipped to help you reach your goals of a healthy and fit life style.
@@ -42,7 +42,171 @@
           </div>
         </div>
       </section>
-
+      <!-- prima immagine sfondo -->
+      <section class="bg-gym">
+        <div class="container">
+          <div class="row justify-content-center p-5">
+            <div class="col-10 container-fluid">
+              <div class="row text-center">
+                <div class="col-3">
+                  <img class="icon" :src="require('./assets/img/Strenght.svg')" alt="">
+                  <h6 class="thick small mt-3">
+                    Strnght & Conditioning
+                  </h6>
+                   <img class="m-2" :src="require('./assets/img/divider-x-red.png')">
+                  <p class="grey-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. In augue nisl, ornare es volutpat etra us.</p>
+                </div>
+                <div class="col-3">
+                  <img class="icon" :src="require('./assets/img/Fitness.svg')" alt="Divider">
+                  <h6 class="thick small mt-3">
+                    Strnght & Conditioning
+                  </h6>
+                   <img class="m-2" :src="require('./assets/img/divider-x-red.png')">
+                  <p class="grey-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. In augue nisl, ornare es volutpat etra us.</p>
+                </div>
+                <div class="col-3">
+                  <img class="icon" :src="require('./assets/img/Flex.svg')" alt="">
+                  <h6 class="thick small mt-3">
+                    Strnght & Conditioning
+                  </h6>
+                   <img class="m-2" :src="require('./assets/img/divider-x-red.png')">
+                  <p class="grey-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. In augue nisl, ornare es volutpat etra us.</p>
+                </div>
+                <div class="col-3">
+                  <img class="icon" :src="require('./assets/img/Diet.svg')" alt="">
+                  <h6 class="thick small mt-3">
+                    Strnght & Conditioning
+                  </h6>
+                   <img class="m-2" :src="require('./assets/img/divider-x-red.png')">
+                  <p class="grey-txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. In augue nisl, ornare es volutpat etra us.</p>
+                </div>
+              </div>
+            </div>
+           </div>
+        </div>
+      </section>
+      <!-- Reviews -->
+      <section class="bg-basegrey">
+        <div class="container">
+          <div class="row text-center justify-content-center">
+            <div class="col-10 m-5">
+              <br>
+              <h4 class="thick">
+                  REAL WORLD RESULTS
+              </h4>
+              <img class="m-3" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
+              <br>
+              <div class="row justify-content-center text-start mb-4 mt-3">
+                <div class="col-5 bg-mediumgrey p-3 me-3">
+                  <div class="row">
+                    <div class="col-4">
+                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                    </div>
+                    <div class="col-8">
+                      <p>
+                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                      </p>
+                      <span>
+                        - Tara Smith
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5 bg-mediumgrey p-3 ms-3">
+                  <div class="row">
+                    <div class="col-4">
+                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                    </div>
+                    <div class="col-8">
+                      <p>
+                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                      </p>
+                      <span>
+                        - Tara Smith
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center text-start mb-5">
+                <div class="col-5 bg-mediumgrey p-3 me-3">
+                  <div class="row">
+                    <div class="col-4">
+                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                    </div>
+                    <div class="col-8">
+                      <p>
+                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                      </p>
+                      <span>
+                        - Tara Smith
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-5 bg-mediumgrey p-3 ms-3">
+                  <div class="row">
+                    <div class="col-4">
+                        <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                    </div>
+                    <div class="col-8">
+                      <p>
+                        "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
+                      </p>
+                      <span>
+                        - Tara Smith
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <h4 class="thick mt-5">
+                  HIGH PERFORMANCE FACILITIES
+              </h4>
+              <img class="m-3" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
+              <br>
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  <img :src="require('./assets/img/home-image1.jpg')" alt="">
+                </div>
+                <div class="col-4">
+                  <img :src="require('./assets/img/home-image2.jpg')" alt="">
+                </div>
+                <div class="col-4">
+                  <img :src="require('./assets/img/home-image3.jpg')" alt="">
+                </div>
+              </div>
+              <div class="row justify-content-center mt-4 mb-5">
+                <div class="col-4">
+                  <img :src="require('./assets/img/home-image4.jpg')" alt="">
+                </div>
+                <div class="col-4">
+                  <img :src="require('./assets/img/home-image54.jpg')" alt="">
+                </div>
+                <div class="col-4">
+                  <img :src="require('./assets/img/home-image6.jpg')" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- secondo break di sfondo -->
+      <section class="bg-fists">
+        <div class="container">
+          <div class="row justify-content-center text-center p-5">
+            <div class="col-7">
+                <p class="large mt-5">
+                  <b>
+                    "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times"
+                  </b>
+                </p>
+                <span class="thick mt-5">BRUCE LEE - QUOTE OF THE DAY</span>
+            </div>
+           </div>
+        </div>
+      </section>
     </main>
     <FooterAvada/>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
@@ -145,8 +309,21 @@ input {
   font-size: small;
 }
 
+.large {
+  font-size: large;
+}
+
 .txtgrey {
   color: #969596;
+}
+
+.icon {
+  filter: invert(69%) sepia(26%) saturate(5726%) hue-rotate(318deg) brightness(90%) contrast(108%);
+  padding: 6px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid  black;
 }
 
 .btn-form {
@@ -154,6 +331,22 @@ input {
   color: #fafafa;
   width: 100%;
   text-align: center;
+}
+
+.bg-gym {
+  // height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('@/assets/img/gym_bkgd_bw-compressor.jpg');
+}
+
+.bg-fists {
+  // height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url('@/assets/img/home-testimonial-bg.jpg');
 }
 
 </style>
