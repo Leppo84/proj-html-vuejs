@@ -132,7 +132,6 @@ a.nav-link {
     text-align: center;
     max-width: 25px;
     min-width: 25px;
-
     height: 25px;
     padding: 2px;
     margin-right: 4px;

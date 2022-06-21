@@ -181,24 +181,24 @@
               <br>
               <div class="row justify-content-center">
                 <div class="col-4">
-                  <img :src="require('./assets/img/home-image1.jpg')" alt="">
+                  <img class="shadow" :src="require('./assets/img/home-image1.jpg')" alt="">
                 </div>
                 <div class="col-4">
-                  <img :src="require('./assets/img/home-image2.jpg')" alt="">
+                  <img class="shadow" :src="require('./assets/img/home-image2.jpg')" alt="">
                 </div>
                 <div class="col-4">
-                  <img :src="require('./assets/img/home-image3.jpg')" alt="">
+                  <img class="shadow" :src="require('./assets/img/home-image3.jpg')" alt="">
                 </div>
               </div>
               <div class="row justify-content-center mt-4 mb-5">
                 <div class="col-4">
-                  <img :src="require('./assets/img/home-image4.jpg')" alt="">
+                  <img class="shadow" :src="require('./assets/img/home-image4.jpg')" alt="">
                 </div>
                 <div class="col-4">
-                  <img :src="require('./assets/img/home-image54.jpg')" alt="">
+                  <img class="shadow" :src="require('./assets/img/home-image54.jpg')" alt="">
                 </div>
                 <div class="col-4">
-                  <img :src="require('./assets/img/home-image6.jpg')" alt="">
+                  <img class="shadow" :src="require('./assets/img/home-image6.jpg')" alt="">
                 </div>
               </div>
             </div>
@@ -236,7 +236,7 @@
               <div class="row justify-content-center text-start">
                 <div class="col-4 p-3">
                   <div class=" bg-basegrey p-0">
-                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                    <img class="shadow" :src="require('./assets/img/trainer1.jpg')" alt="">
                     <div class="p-3">
                       <h6 class="small thick">
                         Ann Baker
@@ -261,7 +261,7 @@
                 </div>
                 <div class="col-4 p-3">
                   <div class=" bg-basegrey p-0">
-                    <img :src="require('./assets/img/trainer3.jpg')" alt="">
+                    <img class="shadow" :src="require('./assets/img/trainer3.jpg')" alt="">
                     <div class="p-4">
                       <h6 class="small thick">
                         Ann Baker
@@ -286,7 +286,7 @@
                 </div>
                 <div class="col-4 p-3">
                   <div class=" bg-basegrey p-0">
-                    <img :src="require('./assets/img/trainer4.jpg')" alt="">
+                    <img class="shadow" :src="require('./assets/img/trainer4.jpg')" alt="">
                     <div class="p-4">
                       <h6 class="small thick">
                         Ann Baker
@@ -503,6 +503,13 @@ $antiqueBrass: #c2856c;
 
 img {
     max-width: 100%;
+    transition: width 1sec;
+
+}
+
+.shadow:hover {
+  transform: scale(105%);
+  filter: drop-shadow( 0 -1px 7px rgba(0, 0, 0, .3));
 }
 
 .bg-basegrey {
@@ -606,24 +613,3 @@ input {
 }
 
 </style>
-
-<!--   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7); -->
-
-<!--   .forefront-element {
-    -webkit-transform: translateZ(999px) scale(.7);
-    transform: translateZ(999px) scale(.7);
-    z-index: 1;
-  }
-
-  .base-element {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    z-index: 4;
-  }
-
-  .background-element {
-    -webkit-transform: translateZ(-999px) scale(2);
-    transform: translateZ(-999px) scale(2);
-    z-index: 3;
-  }
- -->
