@@ -1,5 +1,5 @@
 <template>
-    <div class="bg">
+    <header class="bg">
         <div class="nav-wrapper container-fluid p-3">
             <div class="row justify-content-between align-items-center text-center">
                 <div class="col-2 p-2 ms-5">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </header>
 </template>
 
 <script>

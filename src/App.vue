@@ -2,6 +2,7 @@
   <div id="app">
     <AvadaHeader/>
     <main>
+      <!-- Presentation -->
       <section class="bg-basegrey">
         <div class="container-fluid">
           <div class="row text-center justify-content-center">
@@ -21,6 +22,7 @@
         </div>
       </section>
       <!-- here comes the triangle -->
+      <!-- form section -->
       <section class="bg-mediumgrey">
         <div class="container-fluid">
           <div class="row justify-content-center">
@@ -47,7 +49,7 @@
           </div>
         </div>
       </section>
-      <!-- prima immagine sfondo -->
+      <!-- first bg break (training icons) -->
       <section class="bg-gym">
         <div class="container-fluid">
           <div class="row justify-content-center pt-5 pb-5">
@@ -90,7 +92,7 @@
            </div>
         </div>
       </section>
-      <!-- Reviews -->
+      <!-- Reviews & facilities -->
       <section class="bg-basegrey">
         <div class="container-fluid">
           <div class="row text-center justify-content-center">
@@ -203,7 +205,7 @@
           </div>
         </div>
       </section>
-      <!-- secondo break di sfondo -->
+      <!-- second bg break (fists quotes) -->
       <section class="bg-fists">
         <div class="container">
           <div class="row justify-content-center text-center">
@@ -220,7 +222,7 @@
            </div>
         </div>
       </section>
-      <!-- Trainers -->
+      <!-- Trainers presentation -->
       <section class="bg-mediumgrey">
         <div class="container-fluid">
           <div class="row text-center justify-content-center">
@@ -235,7 +237,7 @@
                 <div class="col-4 p-3">
                   <div class=" bg-basegrey p-0">
                     <img :src="require('./assets/img/trainer1.jpg')" alt="">
-                    <div class="p-4">
+                    <div class="p-3">
                       <h6 class="small thick">
                         Ann Baker
                         <br>
@@ -314,7 +316,8 @@
           </div>
         </div>
       </section>
-      <!-- Articles -->
+      <!-- second triangle -->
+      <!-- Articles & News-->
       <section class="bg-basegrey">
         <div class="container-fluid">
           <div class="row text-center justify-content-center">
@@ -328,12 +331,10 @@
               <div class="row justify-content-center text-start">
                 <div class="col-4 p-3">
                   <div class=" bg-mediumgrey p-0">
-                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
-                    <div class="p-4">
+                    <img :src="require('./assets/img/blog1.jpg')" alt="">
+                    <div class="p-3">
                       <h6 class="small thick">
-                        Ann Baker
-                        <br>
-                        Personal Trainer
+                        Train with free weights or your body weight?
                       </h6>
                       <p class="small txtgrey">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
@@ -341,12 +342,10 @@
                     </div>
                   </div>
                   <div class=" bg-mediumgrey p-0 mt-4">
-                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
-                    <div class="p-4">
+                    <img :src="require('./assets/img/blog4.jpg')" alt="">
+                    <div class="p-3">
                       <h6 class="small thick">
-                        Ann Baker
-                        <br>
-                        Personal Trainer
+                        To be number one, train like you're number two
                       </h6>
                       <p class="small txtgrey">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
@@ -356,12 +355,10 @@
                 </div>
                 <div class="col-4 p-3">
                   <div class=" bg-mediumgrey p-0">
-                    <img :src="require('./assets/img/trainer3.jpg')" alt="">
-                    <div class="p-4">
+                    <img :src="require('./assets/img/blog6.jpg')" alt="">
+                    <div class="p-3">
                       <h6 class="small thick">
-                        Ann Baker
-                        <br>
-                        Personal Trainer
+                        Nutritional advice that will keep you training
                       </h6>
                       <p class="small txtgrey">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
@@ -370,11 +367,9 @@
                   </div>
                   <div class=" bg-mediumgrey p-0 mt-4">
                     <img :src="require('./assets/img/trainer3.jpg')" alt="">
-                    <div class="p-4">
+                    <div class="p-3">
                       <h6 class="small thick">
-                        Ann Baker
-                        <br>
-                        Personal Trainer
+                        Top 5 mistakes every gym member makes
                       </h6>
                       <p class="small txtgrey">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
@@ -385,11 +380,9 @@
                 <div class="col-4 p-3">
                   <div class=" bg-mediumgrey p-0">
                     <img :src="require('./assets/img/trainer4.jpg')" alt="">
-                    <div class="p-4">
+                    <div class="p-3">
                       <h6 class="small thick">
-                        Ann Baker
-                        <br>
-                        Personal Trainer
+                        Simple principles for your next workout
                       </h6>
                       <p class="small txtgrey">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
@@ -397,12 +390,10 @@
                     </div>
                   </div>
                   <div class=" bg-mediumgrey p-0 mt-4">
-                    <img :src="require('./assets/img/trainer4.jpg')" alt="">
-                    <div class="p-4">
+                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                    <div class="p-3">
                       <h6 class="small thick">
-                        Ann Baker
-                        <br>
-                        Personal Trainer
+                        The myths of shedding body fat explored
                       </h6>
                       <p class="small txtgrey">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
@@ -412,8 +403,28 @@
                 </div>
               </div>
               <br>
-              <button class="btn-trasp">VIEW ALL TRAINERS</button>
+              <button class="btn-trasp">READ ALL ARTICLES</button>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner parallax -->
+      <section class="bg-banner">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-7 my-5">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-9">
+                  <h5 class="thick">
+                    Achieve Your Fitness Goals
+                  </h5>  
+                  <span class="thick small" >Flexible membership packages to suit all levels of athlete and achieve your fitness goals</span>
+                </div>
+                <div class="col-3 text-end">
+                  <button class="btn-trasp" >JOIN US!</button>
+               </div>
+              </div>
+           </div>
           </div>
         </div>
       </section>
@@ -502,6 +513,10 @@ img {
   background-color: #1f2123;
 }
 
+.bg-darkgrey {
+  background-color: #1a1c1e;
+}
+
 .thick {
   font-weight: 700;
 }
@@ -546,15 +561,21 @@ input {
 }
 
 .bg-gym {
-  // height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url('@/assets/img/gym_bkgd_bw-compressor.jpg');
 }
 
+.bg-banner {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('@/assets/img/home-parallax.jpg');
+}
+
 .bg-fists {
-  // height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -564,9 +585,7 @@ input {
 .social-square {
   display: inline-block;
   text-align: center;
-  // width: 25px;
   max-width: 25px;
-
   height: 25px;
   padding: 2px;
   margin-right: 4px;
@@ -574,8 +593,6 @@ input {
 
   img {
     height: 8px;
-    // object-position: top;
-    // fill: black;
     filter: invert(1);
   }
 
@@ -583,9 +600,30 @@ input {
 
 .btn-trasp {
   background-color: transparent;
-  padding: 10px;
+  padding: 8px 24px;
   color: $edward;
   border: 1px solid $edward;
 }
 
 </style>
+
+<!--   box-shadow: 0 -1px 10px rgba(0, 0, 0, .7); -->
+
+<!--   .forefront-element {
+    -webkit-transform: translateZ(999px) scale(.7);
+    transform: translateZ(999px) scale(.7);
+    z-index: 1;
+  }
+
+  .base-element {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .background-element {
+    -webkit-transform: translateZ(-999px) scale(2);
+    transform: translateZ(-999px) scale(2);
+    z-index: 3;
+  }
+ -->
