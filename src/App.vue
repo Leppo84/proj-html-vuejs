@@ -22,6 +22,14 @@
         </div>
       </section>
       <!-- here comes the triangle -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-1 text-center">
+           <div class="arrow-sec">
+           </div>
+          </div>
+        </div>
+      </div>
       <!-- form section -->
       <section class="bg-mediumgrey">
         <div class="container-fluid">
@@ -115,7 +123,7 @@
                           "The trainers at Avada Gym have helied me reach mu fitness goals beyond anything I could of hoped for. I love it!"
                         </i>
                         <br>
-                        <span>- Tara Smith
+                        <span class="pt-2">- Tara Smith
                         </span>
                       </div>
                     </div>
@@ -125,14 +133,15 @@
                   <div class="col-12 bg-mediumgrey p-3">
                     <div class="row">
                       <div class="col-4">
-                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                          <img :src="require('./assets/img/review_2-compressor.jpg')" alt="">
                       </div>
-                      <div class="col-8">
-                        <p>
-                          "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                        </p>
-                        <span>
-                          - Tara Smith
+                      <div class="col-8 small">
+                        <i>
+                          "The atmosphere at Avada Gym is amazing, the people are even better. All in all, it is a great place to work out."
+                        </i>
+                        <br>
+                        <span class="pt-2">
+                          - Simon Chel
                         </span>
                       </div>
                     </div>
@@ -142,14 +151,15 @@
                   <div class="col-12 bg-mediumgrey p-3">
                     <div class="row">
                       <div class="col-4">
-                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                          <img :src="require('./assets/img/review_3-compressor-2.jpg')" alt="">
                       </div>
-                      <div class="col-8">
-                        <p>
-                          "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                        </p>
-                        <span>
-                          - Tara Smith
+                      <div class="col-8 small">
+                        <i>
+                          "The facilities at Avada Gym stood out to me the most. Them are well maintained and have high quality equipment."
+                        </i>
+                        <br>
+                        <span class="pt-2">
+                          - Jen Wirth
                         </span>
                       </div>
                     </div>
@@ -159,14 +169,15 @@
                   <div class="col-12 bg-mediumgrey p-3">
                     <div class="row">
                       <div class="col-4">
-                          <img :src="require('./assets/img/review_1-compressor.jpg')" alt="">
+                          <img :src="require('./assets/img/review_4-compressor-2.jpg')" alt="">
                       </div>
-                      <div class="col-8">
-                        <p>
-                          "The trainers at Avada Gym have helped me reach mu fitness goals beyond anything I could of hoped for. I love it!"
-                        </p>
-                        <span>
-                          - Tara Smith
+                      <div class="col-8 small">
+                        <i>
+                          "No bad thngs to say about Avada Gym, they are top notch at every corner and truly take care of their customenrs."
+                        </i>
+                        <br>
+                        <span class="pt-2">
+                          - Jeff Glum
                         </span>
                       </div>
                     </div>
@@ -317,6 +328,14 @@
         </div>
       </section>
       <!-- second triangle -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-1 text-center">
+            <div class="arrow-sec arrow-medium ">
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Articles & News-->
       <section class="bg-basegrey">
         <div class="container-fluid">
@@ -576,7 +595,7 @@ input {
 
 .bg-banner {
   background-attachment: fixed;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url('@/assets/img/home-parallax.jpg');
@@ -610,6 +629,25 @@ input {
   padding: 8px 24px;
   color: $edward;
   border: 1px solid $edward;
+}
+
+.arrow-sec {
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    min-width: 0; 
+    max-width: 0; 
+    min-height: 0; 
+    max-height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #25292b;
+}
+
+.arrow-sec.arrow-medium {
+    border-top: 20px solid #1f2123;
+    top: 0px;
+
 }
 
 </style>
