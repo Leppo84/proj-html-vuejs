@@ -219,16 +219,15 @@
       <!-- second bg break (fists quotes) -->
       <section class="bg-fists">
         <div class="container">
-          <div class="row justify-content-center text-center">
-            <div class="col-5 mt-4 mb-3">
-                <p class="large mt-5">
-                  <b class="half-thick mt-4">
-                    "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times"
-                  </b>
-                </p>
+          <div class="row justify-content-center align-items-center text-center">
+            <div class="col-5 mt-5 py-5">
+                <b class="half-thick large mt-5">
+                  "I fear not the man who has practiced 10,000 kicks once, but I fear the man who has practiced one kick 10,000 times"
+                </b>
+                <br>
                 <img class="m-3" :src="require('./assets/img/divider-white-xx.png')" alt="Divider">
                 <br>
-                <span class="thick my-3">BRUCE LEE - QUOTE OF THE DAY</span>
+                <span class="thick my-5">BRUCE LEE - QUOTE OF THE DAY</span>
             </div>
            </div>
         </div>
@@ -248,7 +247,7 @@
                 <div class="col-4 p-3">
                   <div class=" bg-basegrey p-0">
                     <img class="shadow" :src="require('./assets/img/trainer1.jpg')" alt="">
-                    <div class="p-3">
+                    <div class="p-4">
                       <h6 class="small thick">
                         Ann Baker
                         <br>
@@ -275,7 +274,7 @@
                     <img class="shadow" :src="require('./assets/img/trainer3.jpg')" alt="">
                     <div class="p-4">
                       <h6 class="small thick">
-                        Ann Baker
+                        Anna Warren
                         <br>
                         Personal Trainer
                       </h6>
@@ -300,7 +299,7 @@
                     <img class="shadow" :src="require('./assets/img/trainer4.jpg')" alt="">
                     <div class="p-4">
                       <h6 class="small thick">
-                        Ann Baker
+                        Peter Rice
                         <br>
                         Personal Trainer
                       </h6>
@@ -350,7 +349,11 @@
               <div class="row justify-content-center text-start">
                 <div class="col-4 p-3">
                   <div class=" bg-mediumgrey p-0">
-                    <img :src="require('./assets/img/blog1.jpg')" alt="">
+                    <div class="reactive">
+                      <img :src="require('./assets/img/blog1.jpg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/link.svg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/lens.svg')" alt="">
+                    </div>
                     <div class="p-3">
                       <h6 class="small thick">
                         Train with free weights or your body weight?
@@ -361,7 +364,11 @@
                     </div>
                   </div>
                   <div class=" bg-mediumgrey p-0 mt-4">
-                    <img :src="require('./assets/img/blog4.jpg')" alt="">
+                    <div class="reactive">
+                      <img :src="require('./assets/img/blog4.jpg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/link.svg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/lens.svg')" alt="">
+                    </div>
                     <div class="p-3">
                       <h6 class="small thick">
                         To be number one, train like you're number two
@@ -374,7 +381,11 @@
                 </div>
                 <div class="col-4 p-3">
                   <div class=" bg-mediumgrey p-0">
-                    <img :src="require('./assets/img/blog6.jpg')" alt="">
+                    <div class="reactive">
+                      <img :src="require('./assets/img/blog6.jpg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/link.svg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/lens.svg')" alt="">
+                    </div>
                     <div class="p-3">
                       <h6 class="small thick">
                         Nutritional advice that will keep you training
@@ -385,7 +396,11 @@
                     </div>
                   </div>
                   <div class=" bg-mediumgrey p-0 mt-4">
-                    <img :src="require('./assets/img/trainer3.jpg')" alt="">
+                    <div class="reactive">
+                      <img :src="require('./assets/img/trainer3.jpg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/link.svg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/lens.svg')" alt="">
+                    </div>
                     <div class="p-3">
                       <h6 class="small thick">
                         Top 5 mistakes every gym member makes
@@ -398,7 +413,11 @@
                 </div>
                 <div class="col-4 p-3">
                   <div class=" bg-mediumgrey p-0">
-                    <img :src="require('./assets/img/trainer4.jpg')" alt="">
+                    <div class="reactive">
+                      <img :src="require('./assets/img/trainer4.jpg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/link.svg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/lens.svg')" alt="">
+                    </div>
                     <div class="p-3">
                       <h6 class="small thick">
                         Simple principles for your next workout
@@ -409,7 +428,11 @@
                     </div>
                   </div>
                   <div class=" bg-mediumgrey p-0 mt-4">
-                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                    <div class="reactive">
+                      <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/link.svg')" alt="">
+                      <img class="icon-art" :src="require('./assets/img/lens.svg')" alt="">
+                    </div>
                     <div class="p-3">
                       <h6 class="small thick">
                         The myths of shedding body fat explored
@@ -532,7 +555,7 @@ img {
 }
 
 .bg-basegrey {
-  background-color: #25292b;
+  background-color: $shark;
 }
 
 .bg-mediumgrey {
@@ -602,6 +625,7 @@ input {
 }
 
 .bg-fists {
+  height: 380px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -648,6 +672,45 @@ input {
     border-top: 20px solid #1f2123;
     top: 0px;
 
+}
+
+div.reactive {
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  img {
+    position: relative;
+  }
+
+  img.icon-art {
+    display: none;
+    left: -50%;
+    transform: translate(-100%);
+    filter: invert(1);
+    height: 20px;
+    padding: 3px;
+  }
+
+}
+
+div.reactive:hover {
+
+  background-color: #d3615e;
+
+    img {
+  opacity: 10%;
+}
+
+img.icon-art {
+  display: block;
+  opacity: 100%;
+  left: -50%;
+  transform: translate(-100%);
+  filter: invert(1);
+  height: 24px;
+  padding: 6px;
+}
 }
 
 </style>
