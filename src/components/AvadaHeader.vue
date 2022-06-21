@@ -16,11 +16,11 @@
             <div class="row splash text-center align-items-center">
                 <div class="col-12">
                     <h1 class="thick">NO PAIN NO GAIN</h1>
-                    <span>
+                    <span class="m-3">
                         Motivation is what gets you started. Habits is what keeps you going.
                     </span>
                     <br>
-                    <button class="btn-trasp">JOIN US TODAY</button>
+                    <button class="btn-trasp mt-5">JOIN US TODAY</button>
                 </div>
             </div>
         </div>

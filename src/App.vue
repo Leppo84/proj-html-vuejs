@@ -308,6 +308,110 @@
                   </div>
                 </div>
               </div>
+              <br>
+              <button class="btn-trasp">VIEW ALL TRAINERS</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Articles -->
+      <section class="bg-basegrey">
+        <div class="container-fluid">
+          <div class="row text-center justify-content-center">
+            <div class="col-7 m-5">
+              <br>
+              <h4 class="thick">
+                  PERFORMANCE NEWS
+              </h4>
+              <img class="m-2" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
+              <br>
+              <div class="row justify-content-center text-start">
+                <div class="col-4 p-3">
+                  <div class=" bg-mediumgrey p-0">
+                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>                                       
+                    </div>
+                  </div>
+                  <div class=" bg-mediumgrey p-0 mt-4">
+                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>                                       
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 p-3">
+                  <div class=" bg-mediumgrey p-0">
+                    <img :src="require('./assets/img/trainer3.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                    </div>
+                  </div>
+                  <div class=" bg-mediumgrey p-0 mt-4">
+                    <img :src="require('./assets/img/trainer3.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 p-3">
+                  <div class=" bg-mediumgrey p-0">
+                    <img :src="require('./assets/img/trainer4.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                    </div>
+                  </div>
+                  <div class=" bg-mediumgrey p-0 mt-4">
+                    <img :src="require('./assets/img/trainer4.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <br>
               <button class="btn-trasp">VIEW ALL TRAINERS</button>
             </div>
           </div>
