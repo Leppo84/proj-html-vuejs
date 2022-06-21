@@ -220,6 +220,99 @@
            </div>
         </div>
       </section>
+      <!-- Trainers -->
+      <section class="bg-mediumgrey">
+        <div class="container-fluid">
+          <div class="row text-center justify-content-center">
+            <div class="col-7 m-5">
+              <br>
+              <h4 class="thick">
+                  MEET OUR TRAINER
+              </h4>
+              <img class="m-2" :src="require('./assets/img/divider-xx-red.png')" alt="Divider">
+              <br>
+              <div class="row justify-content-center text-start">
+                <div class="col-4 p-3">
+                  <div class=" bg-basegrey p-0">
+                    <img :src="require('./assets/img/trainer1.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                      <br>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-facebook.svg')" alt="">
+                        </div>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-twitter.svg')" alt="">
+                        </div>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-instagram.svg')" alt="">
+                        </div>                                        
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 p-3">
+                  <div class=" bg-basegrey p-0">
+                    <img :src="require('./assets/img/trainer3.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                      <br>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-facebook.svg')" alt="">
+                        </div>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-twitter.svg')" alt="">
+                        </div>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-instagram.svg')" alt="">
+                        </div>                                        
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 p-3">
+                  <div class=" bg-basegrey p-0">
+                    <img :src="require('./assets/img/trainer4.jpg')" alt="">
+                    <div class="p-4">
+                      <h6 class="small thick">
+                        Ann Baker
+                        <br>
+                        Personal Trainer
+                      </h6>
+                      <p class="small txtgrey">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. In augue nisl, onare volutpal.
+                      </p>
+                      <br>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-facebook.svg')" alt="">
+                        </div>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-twitter.svg')" alt="">
+                        </div>
+                        <div class="social-square col-2">
+                          <img :src="require('./assets/img/soc-instagram.svg')" alt="">
+                        </div>                                        
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn-trasp">VIEW ALL TRAINERS</button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <FooterAvada/>
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
@@ -232,10 +325,10 @@
 <!-- title WORLD CLASS con triangolino in relative? -->
 <!-- form iscrizione al tarining -->
 <!-- section con background e 4 oggettini (icone? non ci sono) forza e trattamento, muov ecardio, flessibilità e riposo, salute e dieta -->
-<!-- REAL WORLD RESULTS section con 4 figure e le loro cit; stessa sec HIGH PERFORMANCE FACILITIES con 6 foto greyscale -->
+<!-- REAL WORLD RESULTS section con 4 figure e le loro cit; stessa sec HIGH PERFORMANCE FACILITIES con 6 foto greyscale EFFETTO HOVER ombra e allarga-->
 <!-- altra section con bg pugnazzi e frase Bruce Lee -->
-<!-- sec MEET OUR TRAINER 3 schede con foto, testo e iconcine social, tasto per svelarne altri (js?); altro triangolino -->
-<!-- PERFORMANCE NEWS schete foto e testo non affiancate; tasto READ ALL ARTICLES -->
+<!-- sec MEET OUR TRAINER 3 schede con foto, testo e iconcine social, tasto per svelarne altri (js?); altro triangolino  EFFETTO HOVER ombra e allarga-->
+<!-- PERFORMANCE NEWS schete foto e testo non affiancate; tasto READ ALL ARTICLES EFFETTO HOVER filtro rosso e compaiono icone link e zoom -->
 <!-- sez Achieve Your Fitness Goals; titolo + p e tasto sfondo "parallasse" ?? -->
 <!-- footer 3 menu + foto -->
 <!-- bottom-bar stringa copyright + social + tasto per tornar su -->
@@ -243,9 +336,6 @@
 <script>
 import AvadaHeader from './components/AvadaHeader.vue'
 import FooterAvada from './components/FooterAvada.vue'
-
-undefined
-undefined
 
 export default {
   name: 'App',
@@ -365,6 +455,33 @@ input {
   background-size: cover;
   background-position: center;
   background-image: url('@/assets/img/home-testimonial-bg.jpg');
+}
+
+.social-square {
+  display: inline-block;
+  text-align: center;
+  // width: 25px;
+  max-width: 25px;
+
+  height: 25px;
+  padding: 2px;
+  margin-right: 4px;
+  background-color: #1f2123;
+
+  img {
+    height: 8px;
+    // object-position: top;
+    // fill: black;
+    filter: invert(1);
+  }
+
+}
+
+.btn-trasp {
+  background-color: transparent;
+  padding: 10px;
+  color: $edward;
+  border: 1px solid $edward;
 }
 
 </style>

@@ -20,7 +20,7 @@
                         Motivation is what gets you started. Habits is what keeps you going.
                     </span>
                     <br>
-                    <button> JOIN US TODAY</button>
+                    <button class="btn-trasp">JOIN US TODAY</button>
                 </div>
             </div>
         </div>
